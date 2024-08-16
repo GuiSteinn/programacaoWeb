@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form action="/cadastro.php" method="get">
+        <fieldset class="dados_pessoa">
+          <ul>
+            <li>
+              <label for="campo_nome">Nome:</label>
+              <input type="text" id="campo_nome" name="campo_nome" value="Nome"><br>
+            </li>
+
+            <li>
+              <label for="campo_name">Sobrenome:</label>
+              <input type="text" id="campo_sobrenome" name="campo_sobrenome" value="Sobrenome"><br>
+            </li>
+
+             <li>
+                <label for="campo_email">Email:</label>
+                <input type="email" id="campo_email" name="campo_email" required><br>
+            </li>
+
+            <li>
+                <label for="campo_data">Data de Nascimento:</label>
+                <input type="date" id="campo_data" name="campo_data" required><br>
+            </li>
+
+            <li>
+                <label for"sexo">Sexo</label>
+                <label for="sexo_masculino">Masculino:</label>
+                <input id="sexo_masculino" type="radio" name="sexo" value="1"/>
+                <label for="sexo_feminino">Feminino:</label>
+                <input id="sexo_feminino" type="radio" name="sexo" value="2"/>
+            </li>
+
+            <li>
+                <label for="campo_endereco">Endereço:</label>
+                <input type="text" id="campo_endereco" maxlength="200" name="campo_endereco" value="Endereço"><br>
+            </li>
+
+            <li>
+                <label for="campo_cep">CEP</label>
+                <input type="text" name="campo_cep" id="campo_cep" maxlength="10" value="cep"><br>
+            </li>
+        </ul>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+          <input type="button" value="Alerta" onclick="alert('Nenhuma ação relacionada!')">
+        </fieldset>
+      </form>   
+</body>
+</html>
