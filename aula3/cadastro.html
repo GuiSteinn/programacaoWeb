@@ -3,54 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Cadastro</title> 
+    <link rel="stylesheet" href="aula4.css" type="text/css"/> 
 </head>
 <body>
+    <div id="fundo">
     <form action="/cadastro.php" method="get">
         <fieldset class="dados_pessoa">
-          <ul>
-            <li>
+         
+            <ul>
+        
+            <li id="dados" >
               <label for="campo_nome">Nome:</label>
               <input type="text" id="campo_nome" name="campo_nome" value="Nome"><br>
             </li>
 
-            <li>
+            <li id="dados" >
               <label for="campo_name">Sobrenome:</label>
               <input type="text" id="campo_sobrenome" name="campo_sobrenome" value="Sobrenome"><br>
             </li>
 
-             <li>
+             <li id="dados">
                 <label for="campo_email">Email:</label>
                 <input type="email" id="campo_email" name="campo_email" required><br>
             </li>
-
-            <li>
+                <br>
+            <li id="campo">
                 <label for="campo_data">Data de Nascimento:</label>
                 <input type="date" id="campo_data" name="campo_data" required><br>
             </li>
 
-            <li>
+            <li id="campo">
                 <label for"sexo">Sexo</label>
                 <label for="sexo_masculino">Masculino:</label>
                 <input id="sexo_masculino" type="radio" name="sexo" value="1"/>
                 <label for="sexo_feminino">Feminino:</label>
                 <input id="sexo_feminino" type="radio" name="sexo" value="2"/>
             </li>
-
-            <li>
+            <br>
+            <li id="campo">
                 <label for="campo_endereco">Endereço:</label>
                 <input type="text" id="campo_endereco" maxlength="200" name="campo_endereco" value="Endereço"><br>
             </li>
 
-            <li>
+            <li id="campo">
                 <label for="campo_cep">CEP</label>
                 <input type="text" name="campo_cep" id="campo_cep" maxlength="10" value="cep"><br>
+            </li>
+
+            <li id="campo">
+                <label for="cor">escolha sua cor favorita:</label>
+                <input type="color" id="cor" name="cor">
+            </li>
+
+            <li id="campo">
+                <label for="estado">escolha o seu estado:</label>
+                    <select name="estado" id="estado" form="estado">
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="RS">RS</option>
+                    <option value="PR">PR</option>
+                </select>
             </li>
         </ul>
           <input type="submit" value="Enviar">
           <input type="reset" value="Limpar">
           <input type="button" value="Alerta" onclick="alert('Nenhuma ação relacionada!')">
         </fieldset>
-      </form>   
+      </form> 
+    </div>  
 </body>
 </html>
