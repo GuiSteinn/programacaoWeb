@@ -1,0 +1,22 @@
+li#dados{
+    background-color:violet
+}
+
+li#campo{
+    background-color: gray;
+}
+
+li{
+    list-style-type: none;
+     margin: 0;
+    padding: 0;
+} 
+
+div#fundo{
+   
+}
+
+body{
+    background-color: gainsboro;
+} 
+
