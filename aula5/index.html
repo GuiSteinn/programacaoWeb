@@ -3,14 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadoura</title>
+    <title>Calculadoura</title> 
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="jav" href="script.js">
 </head>
 <body>
     <ul>
         <li>
-            Valor:1
+            <label for="">Valor1:</label>
+            <input id="Valor1" type="number">
         </li>
     </ul>
     
+    <ul>
+        <li>
+            <label for="">Valor2:</label>
+            <input id="Valor2" type="number">
+        </li>
+    </ul> 
+
+    <button onclick="somar()">Soma</button>
+    <button onclick="subtrair()">Subtração</button>
+    <button onclick="dividir()">Divisão</button>
+    <button onclick="multiplicar()">Multiplicação</button>
+
+    <ul>
+        <li>
+            <label for="">Resultado</label>
+            <input id="Resultado" type="number" disabled>
+        </li>
+    </ul> 
+
 </body>
 </html>
