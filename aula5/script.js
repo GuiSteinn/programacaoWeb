@@ -1,25 +1,25 @@
-function getValor1(){
+function getvalor1(){
     return parseFloat(document.getElementById("valor1").value)
 } 
 
-function getValor2(){
+function getvalor2(){
     return parseFloat(document.getElementById("valor2").value)
 } 
 
 function somar(){
-    informaResultado(getValor1() + getValor2())
+    informaResultado(getvalor1() + getvalor2())
 } 
 
 function subtrair(){
-    informaResultado(getValor1() - getValor2())
+    informaResultado(getvalor1() - getvalor2())
 } 
 
 function dividir(){
-    informaResultado(getValor1() / getValor2())
+    informaResultado(getvalor1() / getvalor2())
 } 
 
 function multiplicar(){
-    informaResultado(getValor1() * getValor2())
+    informaResultado(getvalor1() * getvalor2())
 }  
 
 function informaResultado (valor) {
